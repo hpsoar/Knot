@@ -161,6 +161,9 @@ extension MarkedCircularBuffer: Collection, MutableCollection {
         get {
             return self._buffer[bounds]
         }
+        set {
+            
+        }
     }
 }
 

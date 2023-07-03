@@ -41,6 +41,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let cacertDerPath = certDir.appendingPathComponent("cacert.der", isDirectory: false)
             let cakeyPath = certDir.appendingPathComponent("cakey.pem", isDirectory: false)
             let rsakeyPath = certDir.appendingPathComponent("rsakey.pem", isDirectory: false)
+            
+            try? fileManager.removeItem(at: cacertPath)
+            try? fileManager.removeItem(at: cacertDerPath)
+            try? fileManager.removeItem(at: cakeyPath)
+            try? fileManager.removeItem(at: rsakeyPath)
+            
 //            let cc = try? String(contentsOf: cacertPath)
             if !fileManager.fileExists(url: cacertPath) {
                 let fullCC = cc1 + cc2 + cc3
@@ -75,6 +81,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                 }
                 let cacertPath = httpRootDir.appendingPathComponent("cacert.pem", isDirectory: false)
+                try? fileManager.removeItem(at: cacertPath)
                 if !fileManager.fileExists(url: cacertPath) {
                     let fullCC = cc1 + cc2 + cc3
                     let ccData = fullCC.data(using: .utf8)
@@ -91,6 +98,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                         }
                     }
                     let cacertPath = httpRootDir.appendingPathComponent("cacert.pem", isDirectory: false)
+                    try? fileManager.removeItem(at: cacertPath)
                     if !fileManager.fileExists(url: cacertPath) {
                         let fullCC = cc1 + cc2 + cc3
                         let ccData = fullCC.data(using: .utf8)

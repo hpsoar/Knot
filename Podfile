@@ -1,7 +1,8 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.0'
 use_frameworks!
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+
 
 target 'NIO1901' do
     pod 'SQLite.swift'

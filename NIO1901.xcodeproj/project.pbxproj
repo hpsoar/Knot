@@ -3620,7 +3620,7 @@
 				CODE_SIGN_ENTITLEMENTS = NIO1901/NIO1901.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73QYWNHB5F;
+				DEVELOPMENT_TEAM = KN3N6ZJA53;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3632,7 +3632,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lojii.NIO1901;
+				PRODUCT_BUNDLE_IDENTIFIER = cy.Lojii.NIO1901;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = NO;
@@ -3653,7 +3653,7 @@
 				CODE_SIGN_ENTITLEMENTS = NIO1901/NIO1901.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73QYWNHB5F;
+				DEVELOPMENT_TEAM = KN3N6ZJA53;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -3682,7 +3682,7 @@
 				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73QYWNHB5F;
+				DEVELOPMENT_TEAM = KN3N6ZJA53;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/TunnelServices/NIO/CNIOBoringSSL/CNIOBoringSSL/include\"";
 				INFOPLIST_FILE = PacketTunnel/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3691,7 +3691,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Lojii.NIO1901.PacketTunnel;
+				PRODUCT_BUNDLE_IDENTIFIER = cy.Lojii.NIO1901.PacketTunnel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -3735,6 +3735,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 73QYWNHB5F;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KN3N6ZJA53;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -3747,7 +3748,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lojii.TunnelServices;
+				PRODUCT_BUNDLE_IDENTIFIER = cy.lojii.TunnelServices;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -3769,6 +3770,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 73QYWNHB5F;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = KN3N6ZJA53;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -3781,7 +3783,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = lojii.TunnelServices;
+				PRODUCT_BUNDLE_IDENTIFIER = cy.lojii.TunnelServices;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;

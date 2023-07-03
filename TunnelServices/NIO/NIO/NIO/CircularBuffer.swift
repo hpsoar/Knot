@@ -162,6 +162,21 @@ extension CircularBuffer: Collection, MutableCollection {
             self._buffer[position.backingIndex] = newValue
         }
     }
+    
+    @inlinable
+    public subscript(bounds: Range<Index>) -> SubSequence {
+        get {
+            precondition(self.distance(from: self.startIndex, to: bounds.lowerBound) >= 0)
+            precondition(self.distance(from: bounds.upperBound, to: self.endIndex) >= 0)
+            
+            var newRing = self
+            newRing.headBackingIndex = bounds.lowerBound.backingIndex
+            newRing.tailBackingIndex = bounds.upperBound.backingIndex
+            return newRing
+        } set {
+            
+        }
+    }
 
     /// The position of the first element in a nonempty `CircularBuffer`.
     ///
@@ -259,16 +274,16 @@ extension CircularBuffer: RandomAccessCollection {
     /// - Complexity: O(1) if the collection conforms to
     ///   `RandomAccessCollection`; otherwise, O(*k*), where *k* is the absolute
     ///   value of `distance`.
-    @inlinable
-    public subscript(bounds: Range<Index>) -> SubSequence {
-        precondition(self.distance(from: self.startIndex, to: bounds.lowerBound) >= 0)
-        precondition(self.distance(from: bounds.upperBound, to: self.endIndex) >= 0)
-
-        var newRing = self
-        newRing.headBackingIndex = bounds.lowerBound.backingIndex
-        newRing.tailBackingIndex = bounds.upperBound.backingIndex
-        return newRing
-    }
+//    @inlinable
+//    public subscript(bounds: Range<Index>) -> SubSequence {
+//        precondition(self.distance(from: self.startIndex, to: bounds.lowerBound) >= 0)
+//        precondition(self.distance(from: bounds.upperBound, to: self.endIndex) >= 0)
+//
+//        var newRing = self
+//        newRing.headBackingIndex = bounds.lowerBound.backingIndex
+//        newRing.tailBackingIndex = bounds.upperBound.backingIndex
+//        return newRing
+//    }
 }
 
 extension CircularBuffer {

@@ -84,9 +84,10 @@ public class VPNTunnelManager: NSObject {
             configInfo["dns"] = "8.8.8.8,8.4.4.4"
             
             let tunnelProviderProtocol = NETunnelProviderProtocol()
-            tunnelProviderProtocol.providerBundleIdentifier = "Lojii.NIO1901.PacketTunnel"
+            tunnelProviderProtocol.providerBundleIdentifier = "cy.Lojii.NIO1901.PacketTunnel"
             tunnelProviderProtocol.providerConfiguration = configInfo
             tunnelProviderProtocol.serverAddress = "127.0.0.1:8034"
+//            tunnelProviderProtocol.identityData
             
             self.vpnManager.protocolConfiguration = tunnelProviderProtocol
             self.vpnManager.localizedDescription = "NIO VPN"
